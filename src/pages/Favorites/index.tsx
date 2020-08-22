@@ -1,10 +1,30 @@
 import React from 'react'
-import { View } from 'react-native'
+import { View, ScrollView } from 'react-native'
+import PageHeader from '../../components/PageHeader'
+
+import TeacherITem from '../../components/TeacherItem'
+
 
 import styles from './styles'
 
 function Favorites() {
-    return <View style={styles.container} />
+    return (
+        <View style={styles.container} >
+            <PageHeader title="Favorite Proffys" />
+
+            <ScrollView
+                style={styles.teacherList}
+                contentContainerStyle={{
+                    paddingHorizontal: 16,
+                    paddingBottom: 16
+                }}
+            >
+                <TeacherITem bio="Biology professor" cost={20} />
+                <TeacherITem bio="Biology professor" cost={20} />
+
+            </ScrollView>
+        </View>
+    )
 }
 
 export default Favorites
