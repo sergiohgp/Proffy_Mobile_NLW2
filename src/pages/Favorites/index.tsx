@@ -19,8 +19,7 @@ function Favorites() {
                     paddingBottom: 16
                 }}
             >
-                <TeacherITem bio="Biology professor" cost={20} />
-                <TeacherITem bio="Biology professor" cost={20} />
+
 
             </ScrollView>
         </View>
